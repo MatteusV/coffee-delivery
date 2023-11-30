@@ -8,6 +8,7 @@ import { User } from './icons/user'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import Link from 'next/link'
 
 export function Header() {
   const [userId, setUserId] = useState('')
@@ -44,10 +45,11 @@ export function Header() {
           </>
         ) : (
           <>
-            <button className="flex gap-1 rounded-[0.375rem] items-center py-2 px-4 bg-purple-light hover:bg-purple transition-all disabled:hover:bg-purple-light font-roboto text-[1.125rem] font-medium leading-[160%]">
+            <Link href='/register'
+            className="flex gap-1 rounded-[0.375rem] items-center py-2 px-4 bg-purple-light hover:bg-purple transition-all disabled:hover:bg-purple-light font-roboto text-[1.125rem] font-medium leading-[160%]">
               <User />
               Registrar
-            </button>
+            </Link>
           </>
         )}
       </div>

@@ -1,37 +1,30 @@
-'use client'
-import { api } from '@/lib/axios'
-import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
+
+import { removeAccentsFromWord } from '../../utils/removesAccentsFromWords'
+import { FormRegisterData } from '@/@types/registerUser'
+import { registerUser } from '../api/registerUser'
+import Nookies from 'nookies'
 
 export default function Register() {
-  const registerFormSchema = z.object({
-    email: z.string().email(),
-    password: z.string().min(6),
-    name: z.string().min(3),
-    state: z
-      .string()
-      .min(2)
-      .max(2)
-      .transform((val) => val.toUpperCase()),
-    city: z.string(),
-  })
+  // const { register, handleSubmit } = useForm<FormRegisterData>()
 
-  type FormRegisterData = z.infer<typeof registerFormSchema>
-
-  const { register, handleSubmit } = useForm<FormRegisterData>({
-    resolver: zodResolver(registerFormSchema),
-  })
-
-  async function handleRegisterUser(data: FormRegisterData) {
-    const response = await api.post('/registerUser', data)
+  async function handleRegisterUser(data: FormData) {
+    'use server'
+    const { id } = await registerUser(data)
+    if(id) {
+      Nookies.set(null, '@coffee-delivery:userId', id, {
+        path: '/',
+        secure: true
+      })
+    }
   }
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded shadow-md w-96">
         <form
           method="post"
-          onSubmit={handleSubmit(handleRegisterUser)}
+          action={handleRegisterUser}
+          // onSubmit={handleSubmit(handleRegisterUser)}
           className="flex flex-col items-center"
         >
           <h1 className="text-2xl font-bold mb-4">Registro</h1>
@@ -45,7 +38,8 @@ export default function Register() {
             <input
               type="text"
               id="username"
-              {...register('name')}
+              // {...register('name')}
+              name='name'
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -58,7 +52,8 @@ export default function Register() {
             </label>
             <input
               type="email"
-              {...register('email')}
+              // {...register('email')}
+              name='email'
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -72,7 +67,8 @@ export default function Register() {
             <input
               type="password"
               id="password"
-              {...register('password')}
+              // {...register('password')}
+              name='password'
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -86,7 +82,8 @@ export default function Register() {
             </label>
             <input
               type="text"
-              {...register('state')}
+              // {...register('state')}
+              name='state'
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -100,7 +97,8 @@ export default function Register() {
             </label>
             <input
               type="text"
-              {...register('city')}
+              // {...register('city')}
+              name='city'
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
