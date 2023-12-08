@@ -1,16 +1,16 @@
 {
   "node": {
-    "52ec0993cc16ac52bc3822481b0f46c12dd4adca": {
+    "8f06a49410d09e37111f71c9508e0b01080f5f7b": {
       "workers": {
-        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fworkspaces%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fworkspaces%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%5D&__client_imported__=!"
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/register/page": "rsc"
       }
     },
-    "f63dfcd09beb7ed152e55479606d4f3b2451223f": {
+    "86812c255988f4e09076e20342fa12e736ad329e": {
       "workers": {
-        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fworkspaces%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fworkspaces%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%5D&__client_imported__=!"
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/register/page": "rsc"
@@ -18,5 +18,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "3yQjVQOQI5lsIxz3fokxlYFV80cO3S82JaD/E8BdiWA="
+  "encryptionKey": "0e0EZbGPcIopBqiCTQqeqlY3QOzv3Fa+2N+xi67EFB4="
 }

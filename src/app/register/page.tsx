@@ -1,30 +1,17 @@
-import { useForm } from 'react-hook-form'
-
-import { removeAccentsFromWord } from '../../utils/removesAccentsFromWords'
-import { FormRegisterData } from '@/@types/registerUser'
+import { redirect } from 'next/navigation'
 import { registerUser } from '../api/registerUser'
-import Nookies from 'nookies'
 
 export default function Register() {
-  // const { register, handleSubmit } = useForm<FormRegisterData>()
-
   async function handleRegisterUser(data: FormData) {
     'use server'
-    const { id } = await registerUser(data)
-    if(id) {
-      Nookies.set(null, '@coffee-delivery:userId', id, {
-        path: '/',
-        secure: true
-      })
-    }
+    await registerUser(data)
+    redirect('/')
   }
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded shadow-md w-96">
         <form
-          method="post"
           action={handleRegisterUser}
-          // onSubmit={handleSubmit(handleRegisterUser)}
           className="flex flex-col items-center"
         >
           <h1 className="text-2xl font-bold mb-4">Registro</h1>
@@ -38,8 +25,7 @@ export default function Register() {
             <input
               type="text"
               id="username"
-              // {...register('name')}
-              name='name'
+              name="name"
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -52,8 +38,7 @@ export default function Register() {
             </label>
             <input
               type="email"
-              // {...register('email')}
-              name='email'
+              name="email"
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -67,8 +52,7 @@ export default function Register() {
             <input
               type="password"
               id="password"
-              // {...register('password')}
-              name='password'
+              name="password"
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -82,8 +66,7 @@ export default function Register() {
             </label>
             <input
               type="text"
-              // {...register('state')}
-              name='state'
+              name="state"
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
@@ -97,8 +80,7 @@ export default function Register() {
             </label>
             <input
               type="text"
-              // {...register('city')}
-              name='city'
+              name="city"
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>

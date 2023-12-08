@@ -1,11 +1,32 @@
 'use server'
 
-import { FormRegisterData } from "@/@types/registerUser";
-import { prisma } from "@/lib/prisma";
-import { removeAccentsFromWord } from "@/utils/removesAccentsFromWords";
-import { hash } from "bcryptjs";
+import { prisma } from '@/lib/prisma'
+import { removeAccentsFromWord } from '@/utils/removesAccentsFromWords'
+import { hash } from 'bcryptjs'
+import { cookies } from 'next/headers'
+import { z } from 'zod'
 
-export async function registerUser(data: FormData) {
+const registerFormSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(6),
+  name: z.string().min(3),
+  state: z
+    .string()
+    .min(2)
+    .max(2)
+    .transform((val) => val.toUpperCase()),
+  city: z.string(),
+})
+
+export async function registerUser(formData: FormData) {
+  const data = registerFormSchema.parse({
+    email: formData.get('email'),
+    name: formData.get('name'),
+    password: formData.get('password'),
+    state: formData.get('state'),
+    city: formData.get('city'),
+  })
+
   const cityWithOutAccents = removeAccentsFromWord(data.city)
   data.city = cityWithOutAccents
 
@@ -13,11 +34,11 @@ export async function registerUser(data: FormData) {
 
   const userWithSameEmail = await prisma.user.findUnique({
     where: {
-      email: data.email
-    }
+      email: data.email,
+    },
   })
 
-  if(userWithSameEmail) {
+  if (userWithSameEmail) {
     throw new Error('E-mail já esta sendo usado.')
   }
 
@@ -28,12 +49,15 @@ export async function registerUser(data: FormData) {
       name: data.name,
       password_hash: passwordHash,
       state: data.state,
-    }
+    },
   })
 
-  if(!user) {
+  if (!user) {
     throw new Error('Não foi possivel cadastrar o usuário.')
   }
 
-  return user
+  cookies().set('@coffee-delivery:userId', user.id, {
+    path: '/',
+    secure: true,
+  })
 }

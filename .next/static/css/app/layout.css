@@ -491,6 +491,9 @@ video {
 .static {
   position: static;
 }
+.absolute {
+  position: absolute;
+}
 .-mt-5 {
   margin-top: -1.25rem;
 }
@@ -517,6 +520,36 @@ video {
 }
 .mt-\[3\.37rem\] {
   margin-top: 3.37rem;
+}
+.-mt-8 {
+  margin-top: -2rem;
+}
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+.ml-8 {
+  margin-left: 2rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.ml-6 {
+  margin-left: 1.5rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-\[0\.94rem\] {
+  margin-top: 0.94rem;
 }
 .block {
   display: block;
@@ -558,8 +591,17 @@ video {
 .w-screen {
   width: 100vw;
 }
+.w-\[12\.5rem\] {
+  width: 12.5rem;
+}
+.w-\[3\.75rem\] {
+  width: 3.75rem;
+}
 .flex-1 {
   flex: 1 1 0%;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -597,6 +639,9 @@ video {
 .gap-8 {
   gap: 2rem;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .rounded {
   border-radius: 0.25rem;
 }
@@ -608,6 +653,9 @@ video {
 }
 .rounded-md {
   border-radius: 0.375rem;
+}
+.rounded-\[0\.25rem\] {
+  border-radius: 0.25rem;
 }
 .rounded-bl-\[2\.25rem\] {
   border-bottom-left-radius: 2.25rem;
@@ -623,6 +671,10 @@ video {
 }
 .border {
   border-width: 1px;
+}
+.border-base-button {
+  --tw-border-opacity: 1;
+  border-color: rgb(230 229 229 / var(--tw-border-opacity));
 }
 .bg-background {
   --tw-bg-opacity: 1;
@@ -668,6 +720,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(241 233 201 / var(--tw-bg-opacity));
 }
+.bg-base-input {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 237 237 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'\.\.\/assets\/background\.png\'\)\] {
   background-image: url(/_next/static/media/background.ffed1a5a.png);
 }
@@ -677,6 +733,9 @@ video {
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -685,6 +744,12 @@ video {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-40 {
+  padding: 10rem;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -713,6 +778,14 @@ video {
 .py-\[5\.87rem\] {
   padding-top: 5.87rem;
   padding-bottom: 5.87rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .text-justify {
   text-align: justify;
@@ -752,6 +825,14 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -789,6 +870,10 @@ video {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -1734,6 +1819,64 @@ video {
   .\32xl\:justify-around {
     justify-content: space-around;
   }
+}
+
+.placeholder\:p-1::-moz-placeholder {
+  padding: 0.25rem;
+}
+
+.placeholder\:p-1::placeholder {
+  padding: 0.25rem;
+}
+
+.placeholder\:p-3::-moz-placeholder {
+  padding: 0.75rem;
+}
+
+.placeholder\:p-3::placeholder {
+  padding: 0.75rem;
+}
+
+.placeholder\:p-10::-moz-placeholder {
+  padding: 2.5rem;
+}
+
+.placeholder\:p-10::placeholder {
+  padding: 2.5rem;
+}
+
+.placeholder\:p-16::-moz-placeholder {
+  padding: 4rem;
+}
+
+.placeholder\:p-16::placeholder {
+  padding: 4rem;
+}
+
+.placeholder\:font-roboto::-moz-placeholder {
+  font-family: Roboto, sans-serif;
+}
+
+.placeholder\:font-roboto::placeholder {
+  font-family: Roboto, sans-serif;
+}
+
+.placeholder\:text-sm::-moz-placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:leading-\[130\%\]::-moz-placeholder {
+  line-height: 130%;
+}
+
+.placeholder\:leading-\[130\%\]::placeholder {
+  line-height: 130%;
 }
 
 .hover\:bg-purple:hover {
