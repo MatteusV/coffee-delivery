@@ -4,15 +4,23 @@ import { Cart } from './icons/cart'
 import { useState } from 'react'
 import { Less } from './icons/less'
 import { Plus } from './icons/plus'
+import { insertProductToCart } from '../api/insertProcutToCart'
 
 interface CardCoffeeProps {
   image: string
   title: string
   subtitle: string
   price: number
+  id: string
 }
 
-export function CardCoffee({ image, price, subtitle, title }: CardCoffeeProps) {
+export function CardCoffee({
+  image,
+  price,
+  subtitle,
+  title,
+  id,
+}: CardCoffeeProps) {
   const [amount, setAmount] = useState(1)
   return (
     <div className="flex flex-col items-center px-5 bg-base-card w-64 h-[19.375rem] rounded-tl-[0.375rem] rounded-tr-[2.25rem] rounded-br-[0.375rem] rounded-bl-[2.25rem]">
@@ -60,7 +68,19 @@ export function CardCoffee({ image, price, subtitle, title }: CardCoffeeProps) {
           </button>
         </div>
 
-        <button className="p-3 rounded-[0.375rem] bg-purple-dark">
+        <button
+          onClick={() => {
+            insertProductToCart({
+              amount,
+              id,
+              name: title,
+              originalPrice: price,
+              imageUrl: image,
+            })
+            window.location.href = '/'
+          }}
+          className="p-3 rounded-[0.375rem] bg-purple-dark"
+        >
           <Cart color="white" />
         </button>
       </div>

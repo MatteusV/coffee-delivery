@@ -1,22 +1,104 @@
 {
   "node": {
-    "8f06a49410d09e37111f71c9508e0b01080f5f7b": {
+    "fc9ac61400c92cf5770f5ef1bce208c2ebf8af0e": {
       "workers": {
-        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%5D&__client_imported__=!"
+        "app/checkout/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fcheckout%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProductFromCart.ts%22%2C%5B%22getProductFromCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProducts.ts%22%2C%5B%22getProducts%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/not-found": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/checkout/page": "rsc",
+        "app/register/page": "rsc",
+        "app/page": "rsc",
+        "app/not-found": "rsc"
+      }
+    },
+    "38e44e51b75fd15263222f1d9c71b4bfd128b49d": {
+      "workers": {
+        "app/checkout/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fcheckout%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProductFromCart.ts%22%2C%5B%22getProductFromCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProducts.ts%22%2C%5B%22getProducts%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/not-found": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/checkout/page": "rsc",
+        "app/register/page": "rsc",
+        "app/page": "rsc",
+        "app/not-found": "rsc"
+      }
+    },
+    "c3d3d71ddd21a95cf73e0c53c7600d9c10d8daf7": {
+      "workers": {
+        "app/checkout/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fcheckout%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProductFromCart.ts%22%2C%5B%22getProductFromCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "d0da006c880b40fb614d0cf52dd12e8f55f99b09": {
+      "workers": {
+        "app/checkout/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fcheckout%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProductFromCart.ts%22%2C%5B%22getProductFromCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "77f5096b8dabde8da0d1380e195509f56c2a5d36": {
+      "workers": {
+        "app/checkout/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FdeleteProductFromCart.ts%22%2C%5B%22deleteProductFromCart%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      }
+    },
+    "86812c255988f4e09076e20342fa12e736ad329e": {
+      "workers": {
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/register/page": "rsc"
       }
     },
-    "86812c255988f4e09076e20342fa12e736ad329e": {
+    "8f06a49410d09e37111f71c9508e0b01080f5f7b": {
       "workers": {
-        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%5D&__client_imported__=!"
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/register/page": "rsc"
       }
+    },
+    "bbaef83b96f6e3a0fe865cc5467d51960c16494d": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProducts.ts%22%2C%5B%22getProducts%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "cfc2a692ef89a600b7baeb4e6253d9dbf197960f": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FinsertProcutToCart.ts%22%2C%5B%22insertProductToCart%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    },
+    "55ced08413a678fcc2c7f083ca1c3f339547f8ca": {
+      "workers": {
+        "app/not-found": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/checkout/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fcheckout%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProductFromCart.ts%22%2C%5B%22getProductFromCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/register/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fregister%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FregisterUser.ts%22%2C%5B%22registerUser%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!",
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FgetProducts.ts%22%2C%5B%22getProducts%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FcountProductToCart.ts%22%2C%5B%22countProductToCart%22%5D%5D%2C%5B%22%2Fhome%2Fmatteus%2FDocumentos%2Fcoffee-delivery%2Fsrc%2Fapp%2Fapi%2FfindUserById.ts%22%2C%5B%22findUserById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/not-found": "rsc",
+        "app/checkout/page": "rsc",
+        "app/register/page": "rsc",
+        "app/page": "rsc"
+      }
     }
   },
   "edge": {},
-  "encryptionKey": "0e0EZbGPcIopBqiCTQqeqlY3QOzv3Fa+2N+xi67EFB4="
+  "encryptionKey": "/ZZ7Rsa6nbpyk/tSwCaQoWy8XuQrgzn43hQksSLmVdA="
 }

@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -18,6 +18,20 @@ model User {
   city          String
   state         String
   created_at    DateTime @default(now())
+  Cart          Cart[]
 
   @@map("users")
+}
+
+model Cart {
+  id             String @id @default(uuid())
+  user           User   @relation(fields: [user_id], references: [id])
+  user_id        String
+  original_price Float
+  name           String
+  amount         Int
+  product_id     String
+  imageUrl       String
+
+  @@map("cart")
 }

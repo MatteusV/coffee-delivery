@@ -2,11 +2,10 @@ import Image from 'next/image'
 import { Advantage } from '@/app/components/advantage'
 import { CardCoffee } from '@/app/components/cardCoffee'
 import coffee from '@/assets/coffee.png'
-import { getProducts } from './components/getProducts'
+import { getProducts } from './api/getProducts'
 
 export default async function Home() {
   const products = await getProducts()
-
   return (
     <>
       <section className="flex justify-between 2xl:justify-around items-center w-full py-[5.87rem] px-40 bg-background bg-[url('../assets/background.png')] bg-cover bg-no-repeat">
@@ -50,6 +49,7 @@ export default async function Home() {
         <div className="mt-[3.37rem] grid place-items-center max-[528px]:grid-cols-1 max-xl:grid-cols-2 max-2xl:grid-cols-3 grid-cols-4 gap-8 w-full">
           {products.map((product) => (
             <CardCoffee
+              id={product.id}
               price={product.price}
               title={product.name}
               subtitle={product.description as string}
