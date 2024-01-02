@@ -11,27 +11,46 @@ datasource db {
 }
 
 model User {
-  id            String   @id @default(uuid())
-  email         String   @unique
+  id            String    @id @default(uuid())
+  email         String    @unique
   password_hash String
   name          String
   city          String
   state         String
-  created_at    DateTime @default(now())
+  created_at    DateTime  @default(now())
   Cart          Cart[]
+  Success       Success[]
 
   @@map("users")
 }
 
 model Cart {
-  id             String @id @default(uuid())
-  user           User   @relation(fields: [user_id], references: [id])
+  id             String  @id @default(uuid())
+  user           User    @relation(fields: [user_id], references: [id])
   user_id        String
   original_price Float
   name           String
   amount         Int
   product_id     String
   imageUrl       String
+  status         String?
 
   @@map("cart")
+}
+
+model Success {
+  id             String @id @default(uuid())
+  street         String
+  number         String
+  zip_code       String
+  neighborhood   String
+  city           String
+  UF             String
+  complement     String
+  payment_method String
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("success")
 }

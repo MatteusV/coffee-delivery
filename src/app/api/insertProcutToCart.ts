@@ -1,6 +1,7 @@
 'use server'
 
 import { prisma } from '@/lib/prisma'
+import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 
 interface productProps {
@@ -45,4 +46,5 @@ export async function insertProductToCart(data: productProps) {
       },
     })
   }
+  revalidatePath('/')
 }

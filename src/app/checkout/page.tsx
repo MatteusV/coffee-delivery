@@ -5,15 +5,20 @@ import { CreditCard } from '../components/icons/creditCard'
 import { DollarSign } from '../components/icons/dollarSign'
 import { EmojiSad } from '../components/icons/emojiSad'
 import { Location } from '../components/icons/location'
-import { ButtonReturnHomePage } from './components/buttonReturnHomePage'
+import { ButtonReturnHomePage } from '../components/buttonReturnHomePage'
+import { TotalPrice } from '../components/totalPrice'
+import { orderCompleted } from '../api/orderCompleted'
 
 export default async function Checkout() {
   const products = await getProductFromCart()
 
-  async function handleOrderConfirmed(data: FormData) {
+  async function handleOrderCompleted() {
     'use server'
-    console.log(data)
+    const cheackoutUrl = await orderCompleted()
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    window.location.href = cheackoutUrl!
   }
+
   return (
     <div className="flex justify-between px-40 mt-10">
       <div>
@@ -37,15 +42,15 @@ export default async function Checkout() {
           </div>
 
           <form
-            action={handleOrderConfirmed}
+            action={handleOrderCompleted}
             name="payment"
             id="payment"
             className="mt-8 flex flex-col gap-4"
           >
             <input
               type="text"
-              name="cep"
-              id="cep"
+              name="zipCode"
+              id="zipCode"
               required
               placeholder="CEP"
               className="rounded-[0.25rem] border border-base-button bg-base-input placeholder:font-roboto placeholder:text-sm placeholder:leading-[130%] p-3 w-[12.5rem]"
@@ -53,8 +58,8 @@ export default async function Checkout() {
 
             <input
               type="text"
-              name="rua"
-              id="rua"
+              name="street"
+              id="street"
               required
               placeholder="Rua"
               className="rounded-[0.25rem] border border-base-button bg-base-input placeholder:font-roboto placeholder:text-sm placeholder:leading-[130%] p-3 flex-1"
@@ -63,8 +68,8 @@ export default async function Checkout() {
             <div className="flex gap-3">
               <input
                 type="number"
-                name="numero"
-                id="numero"
+                name="number"
+                id="number"
                 required
                 placeholder="Numero"
                 className="rounded-[0.25rem] border border-base-button bg-base-input placeholder:font-roboto placeholder:text-sm placeholder:leading-[130%] p-3 w-[12.5rem]"
@@ -72,8 +77,8 @@ export default async function Checkout() {
 
               <input
                 type="text"
-                name="complemento"
-                id="complemento"
+                name="complement"
+                id="complement"
                 placeholder="Complemento"
                 className="rounded-[0.25rem] border border-base-button bg-base-input placeholder:font-roboto placeholder:text-sm placeholder:leading-[130%] p-3 flex-1"
               />
@@ -83,17 +88,17 @@ export default async function Checkout() {
               <input
                 type="text"
                 required
-                name="bairro"
-                id="bairro"
+                name="neighborhood"
+                id="neighborhood"
                 placeholder="Bairro"
                 className="rounded-[0.25rem] border border-base-button bg-base-input placeholder:font-roboto placeholder:text-sm placeholder:leading-[130%] p-3 w-[12.5rem]"
               />
 
               <input
                 type="text"
-                name="cidade"
+                name="city"
                 required
-                id="cidade"
+                id="city"
                 placeholder="Cidade"
                 className="rounded-[0.25rem] border border-base-button bg-base-input placeholder:font-roboto placeholder:text-sm placeholder:leading-[130%] p-3 flex-1"
               />
@@ -112,7 +117,7 @@ export default async function Checkout() {
 
         <div className="p-10 bg-base-card rounded-md mt-[0.94rem]">
           <div className="flex gap-2">
-            <DollarSign />
+            <DollarSign color="purple" />
 
             <div>
               <h2 className="text-base-subtitle font-roboto leading-[130%]">
@@ -189,7 +194,7 @@ export default async function Checkout() {
           <div className="space-y-6">
             {products.length === 0 ? (
               <div className="w-full p-10 bg-yellow-light flex flex-col items-center gap-4">
-                <h1 className="font-bold font-baloo2 text-yellow-dark underline underline-offset-2">
+                <h1 className="font-bold font-baloo2 text-yellow-dark">
                   Não possui nenhum produto no carrinho.
                 </h1>
                 <EmojiSad />
@@ -207,36 +212,13 @@ export default async function Checkout() {
             ))}
           </div>
 
-          {products ? (
+          {products.length === 0 ? (
             <>
               <ButtonReturnHomePage />
             </>
           ) : (
             <>
-              <div className="mt-6">
-                <div className="flex justify-between">
-                  <p>Total de itens</p>
-                  <p>R$ 29,70</p>
-                </div>
-
-                <div className="flex justify-between">
-                  <p>Entrega</p>
-                  <p>R$ 3,50</p>
-                </div>
-
-                <div className="flex justify-between text-xl font-roboto font-bold leading-[130%] text-base-subtitle">
-                  <p>Total</p>
-                  <p>R$ 33,20</p>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                form="payment"
-                className="w-full rounded-md text-white font-roboto font-bold text-sm leading-[160%] uppercase bg-yellow py-3 px-2 mt-6 hover:bg-yellow-dark hover:transition-all"
-              >
-                confirmar pedido
-              </button>
+              <TotalPrice />
             </>
           )}
         </div>

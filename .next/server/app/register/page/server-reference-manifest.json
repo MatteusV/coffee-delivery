@@ -1,0 +1,29 @@
+{
+  "node": {
+    "d4a039d7f96594c0b7bb8a485f8856f566df33a1": {
+      "workers": {
+        "app/register/page": "[node]/.next/server/app/register/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/registerUser.ts [rsc] (ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/register/page": "rsc"
+      }
+    },
+    "e3a5b14fe08371d5ad9d70144425faa433ffa49c": {
+      "workers": {
+        "app/register/page": "[node]/.next/server/app/register/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/registerUser.ts [rsc] (ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/register/page": "rsc"
+      }
+    },
+    "71516f033d182a6156e3dbba0c7e74cb235a2d79": {
+      "workers": {
+        "app/register/page": "[node]/.next/server/app/register/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/registerUser.ts [rsc] (ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/register/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

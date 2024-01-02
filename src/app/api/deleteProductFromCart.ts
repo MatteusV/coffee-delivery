@@ -1,5 +1,6 @@
 'use server'
 import { prisma } from '@/lib/prisma'
+import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 
 export async function deleteProductFromCart(id: string) {
@@ -25,4 +26,6 @@ export async function deleteProductFromCart(id: string) {
       },
     })
   }
+
+  revalidatePath('/checkout')
 }

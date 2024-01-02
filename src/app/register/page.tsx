@@ -1,19 +1,10 @@
-import { redirect } from 'next/navigation'
 import { registerUser } from '../api/registerUser'
 
 export default function Register() {
-  async function handleRegisterUser(data: FormData) {
-    'use server'
-    await registerUser(data)
-    redirect('/')
-  }
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded shadow-md w-96">
-        <form
-          action={handleRegisterUser}
-          className="flex flex-col items-center"
-        >
+        <form action={registerUser} className="flex flex-col items-center">
           <h1 className="text-2xl font-bold mb-4">Registro</h1>
           <div className="mb-4 w-full">
             <label

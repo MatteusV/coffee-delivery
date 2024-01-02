@@ -1,0 +1,61 @@
+{
+  "node": {
+    "e3a5b14fe08371d5ad9d70144425faa433ffa49c": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "8f9f2116a35b125126ae9d1a3d483403f433d406": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "5cad7c2f7b65b8db16a602af5a226272ceea95f2": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "actionBrowser"
+      }
+    },
+    "71516f033d182a6156e3dbba0c7e74cb235a2d79": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "0a6ec322687d9e393c43a6d84e01b269b85d3c71": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "7b63ff2c438fc5f53614938d1a5d2ea05709804a": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    },
+    "60baa89b7545a46f7729425a9d53cd491e5f4bff": {
+      "workers": {
+        "app/checkout/page": "[node]/.next/server/app/checkout/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/getTotalPriceToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/deleteProductFromCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/orderCompleted.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE4)/[project]/src/app/api/getProductFromCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE5)/[project]/src/app/checkout/page.tsx [rsc] (ecmascript)/(ACTIONS_MODULE6)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/checkout/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,37 @@
+{
+  "node": {
+    "f703f52abcf80f2a6cde90621abaad3c38f3bdbf": {
+      "workers": {
+        "app/page": "[node]/.next/server/app/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/insertProcutToCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/getProducts.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "71516f033d182a6156e3dbba0c7e74cb235a2d79": {
+      "workers": {
+        "app/page": "[node]/.next/server/app/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/insertProcutToCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/getProducts.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "7260a349d9ec8d21e998385233a9f5a0a7106db9": {
+      "workers": {
+        "app/page": "[node]/.next/server/app/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/insertProcutToCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/getProducts.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/page": "actionBrowser"
+      }
+    },
+    "e3a5b14fe08371d5ad9d70144425faa433ffa49c": {
+      "workers": {
+        "app/page": "[node]/.next/server/app/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/insertProcutToCart.ts [rsc] (ecmascript, action, ecmascript)/(ACTIONS_MODULE2)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript)/(ACTIONS_MODULE3)/[project]/src/app/api/getProducts.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

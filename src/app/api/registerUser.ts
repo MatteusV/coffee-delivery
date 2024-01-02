@@ -1,9 +1,9 @@
 'use server'
 
 import { prisma } from '@/lib/prisma'
-import { removeAccentsFromWord } from '@/utils/removesAccentsFromWords'
 import { hash } from 'bcryptjs'
 import { cookies } from 'next/headers'
+import { redirect } from 'next/navigation'
 import { z } from 'zod'
 
 const registerFormSchema = z.object({
@@ -26,9 +26,6 @@ export async function registerUser(formData: FormData) {
     state: formData.get('state'),
     city: formData.get('city'),
   })
-
-  const cityWithOutAccents = removeAccentsFromWord(data.city)
-  data.city = cityWithOutAccents
 
   const passwordHash = await hash(data.password, 6)
 
@@ -59,5 +56,8 @@ export async function registerUser(formData: FormData) {
   cookies().set('@coffee-delivery:userId', user.id, {
     path: '/',
     secure: true,
+    httpOnly: true,
   })
+
+  redirect('/')
 }

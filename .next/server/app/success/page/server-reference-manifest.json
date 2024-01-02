@@ -1,0 +1,21 @@
+{
+  "node": {
+    "71516f033d182a6156e3dbba0c7e74cb235a2d79": {
+      "workers": {
+        "app/success/page": "[node]/.next/server/app/success/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/success/page": "rsc"
+      }
+    },
+    "e3a5b14fe08371d5ad9d70144425faa433ffa49c": {
+      "workers": {
+        "app/success/page": "[node]/.next/server/app/success/page/actions.js/(ACTIONS_MODULE0)/[project]/src/app/api/countProductToCart.ts [rsc] (ecmascript)/(ACTIONS_MODULE1)/[project]/src/app/api/findUserById.ts [rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/success/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

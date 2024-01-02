@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Less } from './icons/less'
 import { Plus } from './icons/plus'
 import { Trash } from './icons/trash'
@@ -64,7 +64,6 @@ export function CartCardCoffee({
           <button
             onClick={() => {
               deleteProductFromCart(id)
-              window.location.reload()
             }}
             className="uppercase p-2 flex justify-between items-center gap-1 bg-base-button rounded-[0.375rem] text-xs leading-[160%] font-roboto text-base-text"
           >

@@ -22,6 +22,10 @@ export function CardCoffee({
   id,
 }: CardCoffeeProps) {
   const [amount, setAmount] = useState(1)
+  const priceFormatted = new Intl.NumberFormat('pt-br', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(price * amount)
   return (
     <div className="flex flex-col items-center px-5 bg-base-card w-64 h-[19.375rem] rounded-tl-[0.375rem] rounded-tr-[2.25rem] rounded-br-[0.375rem] rounded-bl-[2.25rem]">
       <Image
@@ -40,13 +44,13 @@ export function CardCoffee({
         </p>
       </div>
       <div className="flex w-full justify-around items-center mb-8">
-        <p className="font-baloo2 text-2xl leading-[130%] font-extrabold text-base-text">
-          {price * amount}
+        <p className="font-baloo2 text-xl leading-[130%] font-extrabold text-base-text">
+          {priceFormatted}
         </p>
 
         <div className="h-[2.375rem] p-2 flex justify-between items-center gap-3 bg-base-button rounded-[0.375rem]">
           <button
-            className={`${amount === 1 ? 'disabled' : ''}`}
+            className={`${amount === 1 ? 'disabled' : ''} hover:cursor-pointer`}
             disabled={amount === 1}
             onClick={() => {
               setAmount((state) => Math.min(10, Math.max(1, state - 1)))
@@ -58,7 +62,9 @@ export function CardCoffee({
             {amount}
           </span>
           <button
-            className={`${amount === 10 ? 'disabled' : ''}`}
+            className={`${
+              amount === 10 ? 'disabled' : ''
+            } hover:cursor-pointer`}
             disabled={amount === 10}
             onClick={() => {
               setAmount((state) => Math.min(10, Math.max(1, state + 1)))
@@ -77,9 +83,8 @@ export function CardCoffee({
               originalPrice: price,
               imageUrl: image,
             })
-            window.location.href = '/'
           }}
-          className="p-3 rounded-[0.375rem] bg-purple-dark"
+          className="p-3 rounded-[0.375rem] bg-purple-dark hover:cursor-pointer"
         >
           <Cart color="white" />
         </button>

@@ -14,7 +14,7 @@ export async function findUserById(userId: string) {
   })
 
   if (!user) {
-    throw new Error('Usuário não encontrado.')
+    return null
   }
 
   return user

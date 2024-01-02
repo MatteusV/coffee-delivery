@@ -1,6 +1,7 @@
 'use server'
 
 import { stripe } from '@/lib/stripe'
+import { revalidatePath } from 'next/cache'
 import Stripe from 'stripe'
 
 export async function getProducts() {
@@ -21,5 +22,6 @@ export async function getProducts() {
     }
   })
 
+  revalidatePath('/')
   return products
 }

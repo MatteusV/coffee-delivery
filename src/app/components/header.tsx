@@ -7,22 +7,12 @@ import Link from 'next/link'
 import { countProductToCart } from '../api/countProductToCart'
 import { findUserById } from '../api/findUserById'
 
-async function getDataFunctionsWithAwait(userId: string) {
-  let amountProductInCart = await countProductToCart(userId)
-  const { city, state } = await findUserById(userId)
-
-  if (!amountProductInCart) {
-    amountProductInCart = 0
-  }
-
-  return { amountProductInCart, city, state }
-}
-
 export async function Header() {
   const cookie = parseCookies()
-  const user = await getDataFunctionsWithAwait(
-    cookie['@coffee-delivery:userId'],
-  )
+  const userId = cookie['@coffee-delivery:userId']
+  const amountProductInCart = await countProductToCart(userId)
+  const user = await findUserById(userId)
+
   return (
     <header className="w-full bg-background flex justify-between py-8 px-40">
       <Link href="/">
@@ -47,7 +37,7 @@ export async function Header() {
             >
               <div className="bg-yellow-dark absolute rounded-full p-1 px-2 -mt-10 ml-4 flex justify-center items-center">
                 <p className="font-roboto text-xs font-bold leading-[130%] text-white">
-                  {user.amountProductInCart}
+                  {amountProductInCart || 0}
                 </p>
               </div>
               <Cart color="yellow" />
