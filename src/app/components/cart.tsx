@@ -44,7 +44,9 @@ export async function CallCart({ amountProductInCart }: CallCartProps) {
       </DrawerTrigger>
       <DrawerContent className="ml-auto w-[30%] h-screen px-10">
         <DrawerHeader>
-          <DrawerTitle className="text-center">Carrinho</DrawerTitle>
+          <DrawerTitle className="text-center text-purple ">
+            Carrinho
+          </DrawerTitle>
         </DrawerHeader>
         <div className="flex flex-col justify-between p-10 bg-base-card rounded-tr-md rounded-bl-md mt-[0.94rem] h-full">
           <div className="space-y-6">

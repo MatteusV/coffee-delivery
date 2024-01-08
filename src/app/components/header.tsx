@@ -11,8 +11,9 @@ import { User } from './icons/user'
 export async function Header() {
   const cookie = parseCookies()
   const userId = cookie['@coffee-delivery:userId']
-  const amountProductInCart = await countProductToCart(userId)
   const user = await findUserById(userId)
+
+  const amountProductInCart = (await countProductToCart(userId)) as number
 
   return (
     <>
@@ -24,15 +25,12 @@ export async function Header() {
         <div className="flex gap-4">
           {user ? (
             <>
-              <button
-                disabled
-                className="flex gap-1 rounded-[0.375rem] items-center p-2 bg-purple-light"
-              >
+              <div className="flex gap-1 rounded-[0.375rem] items-center p-2 bg-purple-light">
                 <Location color="purple" />
-                <p className="font-roboto text-[1.125rem] leading-[160%]">
+                <p className="font-roboto text-[1.125rem] leading-[160%] text-purple-dark">
                   {user.city}, {user.state}
                 </p>
-              </button>
+              </div>
               <CallCart amountProductInCart={amountProductInCart} />
             </>
           ) : (
@@ -43,6 +41,14 @@ export async function Header() {
               >
                 <User />
                 Registrar
+              </Link>
+
+              <Link
+                href="/login"
+                className="flex gap-1 rounded-[0.375rem] items-center py-2 px-4 bg-purple-light hover:bg-purple transition-all disabled:hover:bg-purple-light font-roboto text-[1.125rem] font-medium leading-[160%]"
+              >
+                <User />
+                Login
               </Link>
             </>
           )}

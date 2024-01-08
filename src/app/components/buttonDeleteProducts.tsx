@@ -17,7 +17,7 @@ export function ButtonDeleteProducts({ hidden }: ButtonDeleteProductsProps) {
       <Button
         variant="secondary"
         data-hidden={hidden}
-        className="data-[hidden=true]:hidden"
+        className="data-[hidden=true]:hidden hover:text-red-600"
       >
         Remover produtos
       </Button>

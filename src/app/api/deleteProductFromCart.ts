@@ -1,19 +1,16 @@
 'use server'
-import { prisma } from '@/lib/prisma'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
+
+import { prisma } from '@/lib/prisma'
 
 export async function deleteProductFromCart(id: string) {
   const userId = cookies().get('@coffee-delivery:userId')
 
-  if (!userId) {
-    throw new Error('Não foi possivel indentificar o ID do usuário.')
-  }
-
   const product = await prisma.cart.findFirstOrThrow({
     where: {
       id,
-      user_id: userId.value,
+      user_id: userId?.value,
     },
   })
 

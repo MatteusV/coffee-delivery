@@ -1,20 +1,17 @@
 'use server'
 
-import { prisma } from '@/lib/prisma'
-import { stripe } from '@/lib/stripe'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
+
+import { prisma } from '@/lib/prisma'
+import { stripe } from '@/lib/stripe'
 
 export async function orderCompleted() {
   const userId = cookies().get('@coffee-delivery:userId')
 
-  if (!userId) {
-    throw new Error('Não foi possivel indentificar o ID do usuário.')
-  }
-
   await prisma.cart.updateMany({
     where: {
-      user_id: userId.value,
+      user_id: userId?.value,
     },
     data: {
       status: 'success',
@@ -23,7 +20,7 @@ export async function orderCompleted() {
 
   const products = await prisma.cart.findMany({
     where: {
-      user_id: userId.value,
+      user_id: userId?.value,
     },
   })
 

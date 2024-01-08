@@ -3,12 +3,12 @@ import { Cart } from './icons/cart'
 import { Cup } from './icons/cup'
 import { Timer } from './icons/timer'
 
-interface AdvamtageProps {
+interface AdvantageProps {
   text: string
   icon: string
 }
 
-export function Advantage({ icon, text }: AdvamtageProps) {
+export function Advantage({ icon, text }: AdvantageProps) {
   switch (icon) {
     case 'cart':
       return (

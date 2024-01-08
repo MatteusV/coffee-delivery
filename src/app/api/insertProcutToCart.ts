@@ -1,8 +1,9 @@
 'use server'
 
-import { prisma } from '@/lib/prisma'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
+
+import { prisma } from '@/lib/prisma'
 
 interface productProps {
   id: string
@@ -14,13 +15,9 @@ interface productProps {
 export async function insertProductToCart(data: productProps) {
   const userId = cookies().get('@coffee-delivery:userId')
 
-  if (!userId) {
-    throw new Error('Não foi possivel indentificar o ID do usuário.')
-  }
-
   const sameProductInCart = await prisma.cart.findFirst({
     where: {
-      user_id: userId.value,
+      user_id: userId?.value,
       product_id: data.id,
     },
   })
@@ -37,7 +34,7 @@ export async function insertProductToCart(data: productProps) {
   } else {
     await prisma.cart.create({
       data: {
-        user_id: userId.value,
+        user_id: userId!.value,
         product_id: data.id,
         amount: data.amount,
         original_price: data.originalPrice,

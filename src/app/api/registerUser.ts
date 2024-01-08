@@ -1,10 +1,11 @@
 'use server'
 
-import { prisma } from '@/lib/prisma'
 import { hash } from 'bcryptjs'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
+
+import { prisma } from '@/lib/prisma'
 
 const registerFormSchema = z.object({
   email: z.string().email(),
@@ -57,6 +58,8 @@ export async function registerUser(formData: FormData) {
     path: '/',
     secure: true,
     httpOnly: true,
+    sameSite: true,
+    expires: 60 * 60, // 1 hour
   })
 
   redirect('/')

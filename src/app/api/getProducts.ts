@@ -1,8 +1,9 @@
 'use server'
 
-import { stripe } from '@/lib/stripe'
 import { revalidatePath } from 'next/cache'
 import Stripe from 'stripe'
+
+import { stripe } from '@/lib/stripe'
 
 export async function getProducts() {
   const response = await stripe.products.list({
