@@ -2,10 +2,11 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+
+import { deleteProductFromCart } from '../api/deleteProductFromCart'
 import { Less } from './icons/less'
 import { Plus } from './icons/plus'
 import { Trash } from './icons/trash'
-import { deleteProductFromCart } from '../api/deleteProductFromCart'
 
 interface CardCoffeeProps {
   amountCoffee: number

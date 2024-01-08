@@ -1,7 +1,9 @@
 import Image from 'next/image'
+
 import { Advantage } from '@/app/components/advantage'
 import { CardCoffee } from '@/app/components/cardCoffee'
 import coffee from '@/assets/coffee.png'
+
 import { getProducts } from './api/getProducts'
 
 export default async function Home() {

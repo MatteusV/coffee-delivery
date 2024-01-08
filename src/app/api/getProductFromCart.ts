@@ -1,6 +1,7 @@
 'use server'
-import { prisma } from '@/lib/prisma'
 import { cookies } from 'next/headers'
+
+import { prisma } from '@/lib/prisma'
 
 export async function getProductFromCart() {
   const userId = cookies().get('@coffee-delivery:userId')

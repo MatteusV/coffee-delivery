@@ -1,10 +1,11 @@
 'use client'
 import Image from 'next/image'
-import { Cart } from './icons/cart'
 import { useState } from 'react'
+
+import { insertProductToCart } from '../api/insertProcutToCart'
+import { Cart } from './icons/cart'
 import { Less } from './icons/less'
 import { Plus } from './icons/plus'
-import { insertProductToCart } from '../api/insertProcutToCart'
 
 interface CardCoffeeProps {
   image: string
@@ -22,10 +23,12 @@ export function CardCoffee({
   id,
 }: CardCoffeeProps) {
   const [amount, setAmount] = useState(1)
+
   const priceFormatted = new Intl.NumberFormat('pt-br', {
     style: 'currency',
     currency: 'BRL',
   }).format(price * amount)
+
   return (
     <div className="flex flex-col items-center px-5 bg-base-card w-64 h-[19.375rem] rounded-tl-[0.375rem] rounded-tr-[2.25rem] rounded-br-[0.375rem] rounded-bl-[2.25rem]">
       <Image

@@ -30,14 +30,6 @@ export async function TotalPrice() {
           <p>{priceFormatted}</p>
         </div>
       </div>
-
-      <button
-        type="submit"
-        form="payment"
-        className="w-full rounded-md text-white font-roboto font-bold text-sm leading-[160%] uppercase bg-yellow py-3 px-2 mt-6 hover:bg-yellow-dark hover:transition-all"
-      >
-        confirmar pedido
-      </button>
     </>
   )
 }
