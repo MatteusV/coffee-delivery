@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/components/buttonReturnHomePage.tsx"],"sourcesContent":["'use client'\nexport function ButtonReturnHomePage() {\n  return (\n    <button\n      onClick={() => {\n        window.location.replace('/')\n      }}\n      className=\"w-full rounded-md text-white font-roboto font-bold text-sm leading-[160%] uppercase bg-yellow py-3 px-2 mt-6 hover:bg-yellow-dark hover:transition-all\"\n    >\n      Voltar ao catálogo\n    </button>\n  )\n}\n"],"names":[],"mappings":";;;;;AAAA;;AACO,SAAS;IACd,qBACE,wLAAC;QACC,SAAS;YACP,OAAO,QAAQ,CAAC,OAAO,CAAC;QAC1B;QACA,WAAU;kBACX;;;;;;AAIL;KAXgB"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
