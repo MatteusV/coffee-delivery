@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.js" }
+  ],
+  "env": {
+    "NEXT_PUBLIC_VERCEL_URL": "${VERCEL_URL}"
+  },
+  "scripts": {
+    "prebuild": "prisma generate",
+    "build": "npm run build"
+  }
+}
